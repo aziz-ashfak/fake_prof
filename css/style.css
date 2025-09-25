@@ -251,6 +251,37 @@ input[type="month"] {
 textarea {
   overflow: auto;
   resize: vertical; }
+.hero .slider-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Full viewport height */
+  position: relative;
+}
+
+.hero .text {
+  text-align: center;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero .slider-text {
+  height: 100%;
+}
+
+.hero .one-forth {
+  width: 100%;
+}
+
+.hero .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0,0.3); /* Optional overlay */
+}
 
 fieldset {
   min-width: 0;
