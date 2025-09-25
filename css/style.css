@@ -184,29 +184,7 @@ caption {
 
 th {
   text-align: inherit; }
-.container {
-  width: 100%;          /* instead of width:1200px */
-  max-width: 1200px;    /* optional, to keep it centered on large screens */
-}
-img {
-  max-width: 100%;
-  height: auto;
-}
-.row {
-  display: flex;
-  flex-wrap: wrap;   /* allows elements to stack on small screens */
-}
-@media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    text-align: center;
-  }
 
-  .project-card {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-}
 label {
   display: inline-block;
   margin-bottom: 0.5rem; }
@@ -273,37 +251,6 @@ input[type="month"] {
 textarea {
   overflow: auto;
   resize: vertical; }
-.hero .slider-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh; /* Full viewport height */
-  position: relative;
-}
-
-.hero .text {
-  text-align: center;
-  width: 100%;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.hero .slider-text {
-  height: 100%;
-}
-
-.hero .one-forth {
-  width: 100%;
-}
-
-.hero .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: rgba(0,0,0,0.3); /* Optional overlay */
-}
 
 fieldset {
   min-width: 0;
@@ -505,42 +452,6 @@ pre {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto; }
-.container {
-  width: 90%;    /* instead of 1200px */
-  max-width: 1200px;
-  margin: auto;
-}
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
-.col {
-  flex: 1 1 300px; /* minimum width 300px, then adjusts */
-}
-/* Mobile first */
-body {
-  font-size: 16px;
-}
-
-/* Tablets */
-@media (min-width: 768px) {
-  body {
-    font-size: 18px;
-  }
-}
-
-/* Desktops */
-@media (min-width: 1024px) {
-  body {
-    font-size: 20px;
-  }
-}
-img, video {
-  max-width: 100%;
-  height: auto;
-}
   @media (min-width: 576px) {
     .container {
       max-width: 540px; } }
