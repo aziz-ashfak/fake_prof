@@ -184,7 +184,29 @@ caption {
 
 th {
   text-align: inherit; }
+.container {
+  width: 100%;          /* instead of width:1200px */
+  max-width: 1200px;    /* optional, to keep it centered on large screens */
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;   /* allows elements to stack on small screens */
+}
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
 
+  .project-card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
 label {
   display: inline-block;
   margin-bottom: 0.5rem; }
