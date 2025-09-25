@@ -505,6 +505,42 @@ pre {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto; }
+.container {
+  width: 90%;    /* instead of 1200px */
+  max-width: 1200px;
+  margin: auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.col {
+  flex: 1 1 300px; /* minimum width 300px, then adjusts */
+}
+/* Mobile first */
+body {
+  font-size: 16px;
+}
+
+/* Tablets */
+@media (min-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+/* Desktops */
+@media (min-width: 1024px) {
+  body {
+    font-size: 20px;
+  }
+}
+img, video {
+  max-width: 100%;
+  height: auto;
+}
   @media (min-width: 576px) {
     .container {
       max-width: 540px; } }
