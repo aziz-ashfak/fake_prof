@@ -1,0 +1,142 @@
+/* General Responsive Fixes */
+@media (max-width: 767px) {
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Hero Section: Stack text and image, optimize for mobile */
+  .hero .slider-item .row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero .one-third, .hero .one-forth {
+    width: 100% !important;
+    height: auto !important; /* Override js-fullheight */
+    min-height: 250px; /* Ensure minimum visibility */
+  }
+  .hero .one-third {
+    order: 1;
+    background-size: cover !important;
+    background-position: center !important;
+  }
+  .hero .one-forth {
+    order: 2;
+    text-align: center;
+    padding: 15px;
+  }
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+  .hero h2 {
+    font-size: 1.1rem;
+  }
+  .hero .btn {
+    font-size: 0.85rem;
+    padding: 8px 16px;
+  }
+  .home-slider .owl-stage-outer {
+    overflow: hidden; /* Prevent horizontal scroll */
+  }
+
+  /* About Section */
+  .ftco-about .row {
+    flex-direction: column;
+  }
+  .ftco-about .img-about {
+    height: 250px;
+    margin-bottom: 15px;
+  }
+  .ftco-about .heading-section h2 {
+    font-size: 1.6rem;
+  }
+  .ftco-about p {
+    font-size: 0.9rem;
+  }
+  .ftco-about .counter-wrap {
+    text-align: center;
+  }
+
+  /* Resume Section */
+  #resume-section .row > .col-md-6 {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .resume-wrap h2 {
+    font-size: 1.4rem;
+  }
+  .resume-wrap p {
+    font-size: 0.9rem;
+  }
+
+  /* Services Section */
+  #services-section .col-md-4 {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .services-1 h3 {
+    font-size: 1.1rem;
+  }
+
+  /* Skills Section */
+  #skills-section .col-md-6 {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .progress-wrap h3 {
+    font-size: 0.9rem;
+  }
+
+  /* Projects Section */
+  #projects-section .col-md-4, #projects-section .col-md-8 {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .project {
+    height: 200px;
+    background-size: cover !important;
+    background-position: center !important;
+  }
+  .project h3 {
+    font-size: 1.1rem;
+  }
+
+  /* Contact Section */
+  .contact-section .row.no-gutters {
+    flex-direction: column;
+  }
+  .contact-section .col-md-6 {
+    width: 100%;
+  }
+  .contact-section .img {
+    height: 180px;
+    margin-bottom: 15px;
+  }
+  .contact-info .col-md-6.col-lg-3 {
+    width: 50%;
+  }
+
+  /* Footer */
+  .ftco-footer .col-md {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .ftco-footer-widget h2 {
+    font-size: 1.4rem;
+  }
+
+  /* Global Adjustments */
+  .section {
+    padding: 30px 0;
+  }
+  h2.mb-4 {
+    font-size: 1.6rem;
+  }
+  p {
+    font-size: 0.9rem;
+  }
+  .navbar-nav .nav-link {
+    font-size: 0.95rem;
+    padding: 8px;
+  }
+}
