@@ -39,35 +39,32 @@
 *::after {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
-/* Mobile (phones) */
-@media (max-width: 767px) {
-  .ftco-about .row.d-flex {
-    flex-direction: column !important;  /* stack image & text */
-    text-align: center;                 /* center text on mobile */
-  }
 
-  .ftco-about .img-about {
-    margin-bottom: 20px; /* space between image and text */
-  }
-
-  .ftco-about ul.about-info li {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .counter-wrap {
-    justify-content: center !important;
-    text-align: center;
-  }
+/* Center hero text */
+.hero .slider-item {
+  display: flex;
+  justify-content: center;   /* horizontal center */
+  align-items: center;       /* vertical center */
+  min-height: 100vh;         /* full screen height */
+  text-align: center;        /* center text inside */
+  position: relative;
 }
 
-/* Tablets (768px–1023px) */
-@media (min-width: 768px) and (max-width: 1023px) {
-  .ftco-about .heading-section {
-    text-align: left; /* keep desktop-like alignment */
-  }
+.hero .slider-item .text {
+  max-width: 800px;          /* optional: keep text from stretching too wide */
+  margin: 0 auto;
 }
+
+.hero .slider-item h1,
+.hero .slider-item h2 {
+  color: #fff;               /* make sure text is visible */
+  margin-bottom: 15px;
+}
+.hero .slider-item .text {
+  text-align: center;
+  margin: 0 auto;
+}
+
 
 html {
   font-family: sans-serif;

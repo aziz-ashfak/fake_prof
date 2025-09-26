@@ -1,0 +1,38 @@
+/* Ensure hero section supports centering */
+#home-section.hero {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  height: 100vh !important;
+  text-align: center !important;
+}
+
+/* Override slider-text alignment */
+#home-section .slider-text {
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center !important;
+  width: 100% !important;
+}
+
+/* Center h2 in the first slide */
+#home-section .home-slider .owl-item.active .slider-item:first-child .slider-text .text h2 {
+  text-align: center !important;
+  display: block !important;
+  margin: 0 auto !important;
+  width: fit-content !important;
+  position: relative !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+}
+
+/* Center h1 in the second slide */
+#home-section .home-slider .owl-item.active .slider-item:nth-child(2) .slider-text .text h1 {
+  text-align: center !important;
+  display: block !important;
+  margin: 0 auto !important;
+  width: fit-content !important;
+  position: relative !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+}

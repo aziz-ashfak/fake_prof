@@ -141,6 +141,47 @@ AOS.init({
         });
     };
     scrollWindow();
+ var carousel = function() {
+    $('.home-slider').owlCarousel({
+        loop: true,
+        autoplay: true,
+        margin: 0,
+        animateOut: 'fadeOut',
+        animateIn: 'fadeIn',
+        nav: false,
+        autoplayHoverPause: false,
+        items: 1,
+        autoplayTimeout: 3000,
+        navText: ["<span class='ion-md-arrow-back'></span>", "<span class='ion-chevron-right'></span>"],
+        responsive: {
+            0: { items: 1, stagePadding: 0, autoplayTimeout: 2000 },
+            600: { items: 1, stagePadding: 0 },
+            1000: { items: 1 }
+        }
+    }).on('translated.owl.carousel', function(event) {
+        // Reapply centering styles after slide transition
+        $('#home-section .slider-text h2, #home-section .slider-text h1').css({
+            'text-align': 'center !important',
+            'display': 'block !important',
+            'margin': '0 auto !important',
+            'width': 'fit-content !important',
+            'position': 'relative !important',
+            'left': '50% !important',
+            'transform': 'translateX(-50%) !important'
+        });
+    });
+    // Initial centering on page load
+    $('#home-section .slider-text h2, #home-section .slider-text h1').css({
+        'text-align': 'center !important',
+        'display': 'block !important',
+        'margin': '0 auto !important',
+        'width': 'fit-content !important',
+        'position': 'relative !important',
+        'left': '50% !important',
+        'transform': 'translateX(-50%) !important'
+    });
+};
+carousel();
 
     var counter = function() {
         $('#section-counter, .hero-wrap, .ftco-counter, .ftco-about').waypoint( function( direction ) {
